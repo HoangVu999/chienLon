@@ -11,10 +11,6 @@ for (let i = 0; i < mainNav.length; i++) {
 }
 for (let i = 0; i < subNav.length; i++) {
     subNav[i].addEventListener("click", function (e) {
-        let listLi = document.querySelectorAll(".level2");
-        listLi.forEach(function (li) {
-            li.style.display = "none";
-        })
         let li = e.srcElement.parentElement.children;
         li[1].style.display = !li[1].style.display || li[1].style.display == "none" ? "block" : "none";
     });
